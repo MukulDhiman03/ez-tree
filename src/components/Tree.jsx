@@ -1,8 +1,14 @@
 import React from 'react'
+import { TreeData } from '../utils/mockData'
+import TreeNode from './TreeNode'
 
 const Tree = () => {
+
+
     return (
-        <div className="text-3xl font-bold underline">Tree</div>
+        <div>
+            {TreeData.map((node) => <TreeNode key={node.id} node={node} />)}
+        </div>
     )
 }
 
