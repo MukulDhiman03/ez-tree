@@ -21,17 +21,17 @@ export const TreeData = [
     {
         id: "6",
         label: "Node 2",
-        // children: [
-        //     {
-        //         id: "7",
-        //         label: "Child 1",
-        //         children: []
-        //     },
-        //     {
-        //         id: "8",
-        //         label: "Child 2",
-        //         children: []
-        //     }
-        // ]
+        children: [
+            {
+                id: "7",
+                label: "Child 1",
+                children: []
+            },
+            {
+                id: "8",
+                label: "Child 2",
+                children: []
+            }
+        ]
     }
 ];
