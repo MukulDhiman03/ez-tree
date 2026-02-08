@@ -1,16 +1,50 @@
-# React + Vite
+# 🌳 EZ Tree View
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic, recursive Tree View component built with **React** and **Tailwind CSS**. This project features a fully functional file explorer structure with CRUD operations and Drag-and-Drop capabilities without using heavy external libraries.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Recursive Rendering:** Handles infinite nesting of folders and files.
+- **CRUD Operations:**
+  - ➕ **Add:** Create new child nodes dynamically.
+  - ✏️ **Edit:** Rename nodes inline.
+  - 🗑️ **Delete:** Remove nodes (and their sub-children) recursively.
+- **👆 Drag & Drop:** Reorder items or move files into different folders using native HTML5 DnD API (No external libraries used).
+- **📂 Expand/Collapse:** Smooth toggle for folder visibility.
+- **🎨 Modern UI:** Clean interface designed with Tailwind CSS and Lucide React icons.
+- **Visual Feedback:** Highlight effects on hover and drag-over states.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js (Vite)
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide-React
+- **State Management:** React `useState` (Local State)
 
-## Expanding the ESLint configuration
+## ⚙️ Installation & Running
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to run the project locally:
+
+1.  **Clone the repository** (or unzip the folder):
+
+    ```bash
+    git clone <your-repo-link-here>
+    cd tree-view-project
+    ```
+
+2.  **Install Dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+    _Note: This project requires `lucide-react` for icons._
+
+3.  **Start the Server:**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser:**
+    Typically runs at `http://localhost:5173`
