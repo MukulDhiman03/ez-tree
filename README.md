@@ -45,6 +45,3 @@ Follow these steps to run the project locally:
     ```bash
     npm run dev
     ```
-
-4.  **Open in Browser:**
-    Typically runs at `http://localhost:5173`
