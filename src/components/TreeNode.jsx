@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TreeNode = ({ node, onAdd }) => {
+const TreeNode = ({ node, onAdd, onDelete, onEdit }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleExpand = () => {
@@ -20,9 +20,11 @@ const TreeNode = ({ node, onAdd }) => {
                 <button onClick={() => onAdd(node.id)}>
                     Add
                 </button>
-                <button >
-                    Edit
+                <button onClick={() => onDelete(node.id)}>
+                    Delete
                 </button>
+                <button onClick={() => onEdit(node.id)}>Edit</button>
+
             </div>
 
             {isExpanded &&
@@ -31,6 +33,8 @@ const TreeNode = ({ node, onAdd }) => {
                         key={child.id}
                         node={child}
                         onAdd={onAdd}
+                        onDelete={onDelete}
+                        onEdit={onEdit}
                     />
                 ))
             }
